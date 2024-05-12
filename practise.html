@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Showroom - Shahzaib</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Your custom CSS styles here */
+        /* For example: */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            position: relative; /* Ensure relative positioning for absolute positioning */
+        }
+        .jumbotron {
+            background-image: url('https://images.pexels.com/photos/164634/pexels-photo-164634.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            padding: 100px 0;
+            margin-bottom: 0;
+            position: relative; /* Ensure relative positioning for absolute positioning */
+        }
+        .profile-pic {
+            display: none; /* Hide the profile picture */
+        }
+        .car-section {
+            padding: 50px 0;
+            background-color: #fff;
+        }
+        .car-card {
+            transition: transform 0.3s ease;
+        }
+        .car-card:hover {
+            transform: scale(1.05);
+        }
+        .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+<header class="jumbotron text-center">
+    <div class="container">
+        <h1 class="display-4">Welcome to Shahzaib's Car Showroom</h1>
+        <p class="lead">Explore our collection of premium cars</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> Email: shahzaibnazi98@gmail.com</p>
+            <p><i class="fas fa-phone"></i> Phone: +923086853373</p>
+            <p><i class="fas fa-map-marker-alt"></i> Address: vanikey road, Gujjar street Office No. 36/18, Hafizabad, Pakistan</p>
+            
+        </div>
+
+    </div>
+</header>
+<!-- Car Wash Section -->
+<section id="carWash" class="car-section">
+    <div class="container">
+        <h2 class="text-center mb-4">Car Wash Services</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <h3>Our Packages</h3>
+                <ul>
+                    <li>Basic Wash - $20</li>
+                    <li>Standard Wash & Wax - $40</li>
+                    <li>Deluxe Wash, Wax & Interior Detailing - $80</li>
+                </ul>
+                <p>Customize your package with additional services such as interior vacuuming, tire shine, or leather conditioning.</p>
+                <p>Book your wash now and keep your car looking brand new!</p>
+                <a href="#contactForm" class="btn btn-primary">Book Now</a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://images.pexels.com/photos/6873174/pexels-photo-6873174.jpeg?auto=compress&cs=tinysrgb&w=600" class="img-fluid" alt="Car Wash Facility" height="200">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Main Content Section -->
+    <main class="container my-5">
+        <!-- Car Listings Section -->
+        <section id="carListings" class="car-section">
+            <h2 class="text-center mb-4">Featured Cars</h2>
+            <div class="row">
+               <!-- First car card -->
+<div class="col-md-4 mb-4">
+    <div class="card car-card">
+        <!-- Sticker for New Arrival -->
+        <span class="badge badge-success sticker">New Arrival</span>
+        <img src="https://images.pexels.com/photos/193991/pexels-photo-193991.jpeg?auto=compress&cs=tinysrgb&w=600" class="card-img-top" alt="Mercedes-benz AMG">
+        <div class="card-body">
+            <h5 class="card-title">Mercedes-benz AMG</h5>
+            <p class="card-text">Model: SG3<br>Color: Gray</p>
+            <a href="#" class="btn btn-primary"><i class="fas fa-info-circle"></i> View Details</a>
+        </div>
+    </div>
+</div>
+<!-- Second car card -->
+<div class="col-md-4 mb-4">
+    <div class="card car-card">
+        <!-- Sticker for Best Seller -->
+        <span class="badge badge-danger sticker">Best Seller</span>
+        <img src="https://images.pexels.com/photos/5288708/pexels-photo-5288708.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="White and Black Jeep Wrangler">
+        <div class="card-body">
+            <h5 class="card-title">White and Black Jeep Wrangler</h5>
+            <p class="card-text">Model: Wrangler<br>Color: White and Black</p>
+            <a href="#" class="btn btn-primary"><i class="fas fa-info-circle"></i> View Details</a>
+        </div>
+    </div>
+</div>
+<!-- Third car card -->
+<div class="col-md-4 mb-4">
+    <div class="card car-card">
+        <!-- Sticker for Discount -->
+        <span class="badge badge-warning sticker">Discount</span>
+        <img src="https://images.pexels.com/photos/17791016/pexels-photo-17791016/free-photo-of-black-ford-mustang-car-on-a-snow-covered-road.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="Black Ford Mustang GT V8">
+        <div class="card-body">
+            <h5 class="card-title">Black Ford Mustang GT V8</h5>
+            <p class="card-text">Model: Mustang GT V8<br>Color: Black</p>
+            <a href="#" class="btn btn-primary"><i class="fas fa-info-circle"></i> View Details</a>
+        </div>
+    </div>
+</div>
+<!-- Fourth car card -->
+<div class="col-md-4 mb-4">
+    <div class="card car-card">
+        <!-- Sticker for Limited Stock -->
+        <span class="badge badge-info sticker">Limited Stock</span>
+        <img src="https://images.pexels.com/photos/6729275/pexels-photo-6729275.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" class="card-img-top" alt="White Mustang Convertible">
+        <div class="card-body">
+            <h5 class="card-title">White Mustang Convertible</h5>
+            <p class="card-text">Model: Convertible V12<br>Color: White</p>
+            <a href="#" class="btn btn-primary"><i class="fas fa-info-circle"></i> View Details</a>
+        </div>
+    </div>
+</div>
+</section>
+
+        <!-- Contact Form Section -->
+        <section id="contactForm" class="mt-5">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone"><i class="fas fa-phone"></i> Your Phone Number</label>
+                    <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment"></i> Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Submit</button>
+            </form>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer text-center">
+        <div class="container">
+            <p>&copy; 2024 Shahzaib's Car Showroom. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and jQuery (if needed) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
